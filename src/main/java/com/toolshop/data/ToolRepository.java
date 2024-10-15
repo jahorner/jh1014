@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.toolshop.model.Tool;
-
 public class ToolRepository {
     
     private final List<Tool> tools = new ArrayList<>();
 
-    public ToolRepository(){
-        tools.add(new Tool("CHNS","Chainsaw","Stihl"));
-        tools.add(new Tool("LADW","Ladder","Werner"));
-        tools.add(new Tool("JAKD","Jackhammer","DeWalt"));
-        tools.add(new Tool("JAKR","Jackhammer","Ridgid"));
+    public ToolRepository(ToolTypeRepository toolTypeRepository){
+        tools.add(new Tool("CHNS",toolTypeRepository.getToolType("Chainsaw"),"Stihl"));
+        tools.add(new Tool("LADW",toolTypeRepository.getToolType("Ladder"),"Werner"));
+        tools.add(new Tool("JAKD",toolTypeRepository.getToolType("Jackhammer"),"DeWalt"));
+        tools.add(new Tool("JAKR",toolTypeRepository.getToolType("Jackhammer"),"Ridgid"));
+        tools.add(new Tool("CHNW",null,"Werner"));
     }
 
     public List<Tool> getTools() {

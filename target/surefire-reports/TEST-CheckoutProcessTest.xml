@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CheckoutProcessTest" time="0.073" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="CheckoutProcessTest" time="0.169" tests="19" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Jim\Documents\Git\toolshop\target\test-classes;C:\Users\Jim\Documents\Git\toolshop\target\classes;C:\Users\Jim\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Jim\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="c:\Users\Jim\Documents\Git\toolshop\target\test-classes;c:\Users\Jim\Documents\Git\toolshop\target\classes;C:\Users\Jim\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Jim\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\OpenJDK\OpenJDK-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jim\AppData\Local\Temp\surefire10302706703704979034\surefirebooter-20241014233156536_3.jar C:\Users\Jim\AppData\Local\Temp\surefire10302706703704979034 2024-10-14T23-31-56_371-jvmRun1 surefire-20241014233156536_1tmp surefire_0-20241014233156536_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jim\AppData\Local\Temp\surefire6876226162297628105\surefirebooter-20241015120304431_3.jar C:\Users\Jim\AppData\Local\Temp\surefire6876226162297628105 2024-10-15T12-03-04_219-jvmRun1 surefire-20241015120304431_1tmp surefire_0-20241015120304431_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Jim\Documents\Git\toolshop\target\test-classes;C:\Users\Jim\Documents\Git\toolshop\target\classes;C:\Users\Jim\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Jim\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="c:\Users\Jim\Documents\Git\toolshop\target\test-classes;c:\Users\Jim\Documents\Git\toolshop\target\classes;C:\Users\Jim\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Jim\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Jim"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-09-17"/>
     <property name="java.home" value="C:\Program Files\OpenJDK\OpenJDK-23"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Jim\Documents\Git\toolshop"/>
+    <property name="basedir" value="c:\Users\Jim\Documents\Git\toolshop"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jim\AppData\Local\Temp\surefire10302706703704979034\surefirebooter-20241014233156536_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jim\AppData\Local\Temp\surefire6876226162297628105\surefirebooter-20241015120304431_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23+37-2369"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Jim\AppData\Local\Temp\"/>
     <property name="java.version" value="23"/>
-    <property name="user.dir" value="C:\Users\Jim\Documents\Git\toolshop"/>
+    <property name="user.dir" value="c:\Users\Jim\Documents\Git\toolshop"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,10 +58,218 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="test1" classname="CheckoutProcessTest" time="0.009"/>
-  <testcase name="test2" classname="CheckoutProcessTest" time="0.0"/>
-  <testcase name="test3" classname="CheckoutProcessTest" time="0.0"/>
-  <testcase name="test4" classname="CheckoutProcessTest" time="0.0"/>
-  <testcase name="test5" classname="CheckoutProcessTest" time="0.0"/>
-  <testcase name="test6" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="testJuly4OnFridayWithHolidayChargeNoWeekendCharge" classname="CheckoutProcessTest" time="0.036">
+    <system-out><![CDATA[Tool code: CHNS
+Tool type: Chainsaw
+Brand: Stihl
+Rental Days: 6
+Checkout Date: 07/03/14
+Due Date: 07/08/14
+Daily Rental Charge: $1.49
+Charge Days: 4
+Pre Discount Charge: $5.96
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $5.96
+
+]]></system-out>
+  </testcase>
+  <testcase name="test3Month5DiscountChainsaw" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: CHNS
+Tool type: Chainsaw
+Brand: Stihl
+Rental Days: 90
+Checkout Date: 10/26/14
+Due Date: 01/23/15
+Daily Rental Charge: $1.49
+Charge Days: 65
+Pre Discount Charge: $96.85
+Discount Percent: 5%
+Discount Amount: $4.84
+Final Charge: $92.01
+
+]]></system-out>
+  </testcase>
+  <testcase name="testMonthBoundrayWithLaborDay15DiscountJackhammer" classname="CheckoutProcessTest" time="0.004">
+    <system-out><![CDATA[Tool code: JAKR
+Tool type: Jackhammer
+Brand: Ridgid
+Rental Days: 5
+Checkout Date: 08/30/14
+Due Date: 09/03/14
+Daily Rental Charge: $2.99
+Charge Days: 2
+Pre Discount Charge: $5.98
+Discount Percent: 15%
+Discount Amount: $0.90
+Final Charge: $5.08
+
+]]></system-out>
+  </testcase>
+  <testcase name="testFeburaryBoundaryNoDiscountChainsaw" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: CHNS
+Tool type: Chainsaw
+Brand: Stihl
+Rental Days: 5
+Checkout Date: 02/26/14
+Due Date: 03/02/14
+Daily Rental Charge: $1.49
+Charge Days: 3
+Pre Discount Charge: $4.47
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $4.47
+
+]]></system-out>
+  </testcase>
+  <testcase name="testNullToolCode" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="testNullToolType" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="test1" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="test2" classname="CheckoutProcessTest" time="0.009">
+    <system-out><![CDATA[Tool code: LADW
+Tool type: Ladder
+Brand: Werner
+Rental Days: 3
+Checkout Date: 07/02/20
+Due Date: 07/04/20
+Daily Rental Charge: $1.99
+Charge Days: 2
+Pre Discount Charge: $3.98
+Discount Percent: 10%
+Discount Amount: $0.40
+Final Charge: $3.58
+
+]]></system-out>
+  </testcase>
+  <testcase name="test3" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: CHNS
+Tool type: Chainsaw
+Brand: Stihl
+Rental Days: 5
+Checkout Date: 07/02/15
+Due Date: 07/06/15
+Daily Rental Charge: $1.49
+Charge Days: 3
+Pre Discount Charge: $4.47
+Discount Percent: 25%
+Discount Amount: $1.12
+Final Charge: $3.35
+
+]]></system-out>
+  </testcase>
+  <testcase name="test4" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: JAKD
+Tool type: Jackhammer
+Brand: DeWalt
+Rental Days: 6
+Checkout Date: 09/03/15
+Due Date: 09/08/15
+Daily Rental Charge: $2.99
+Charge Days: 3
+Pre Discount Charge: $8.97
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $8.97
+
+]]></system-out>
+  </testcase>
+  <testcase name="test5" classname="CheckoutProcessTest" time="0.004">
+    <system-out><![CDATA[Tool code: JAKR
+Tool type: Jackhammer
+Brand: Ridgid
+Rental Days: 9
+Checkout Date: 07/02/15
+Due Date: 07/10/15
+Daily Rental Charge: $2.99
+Charge Days: 6
+Pre Discount Charge: $17.94
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $17.94
+
+]]></system-out>
+  </testcase>
+  <testcase name="test6" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: JAKR
+Tool type: Jackhammer
+Brand: Ridgid
+Rental Days: 4
+Checkout Date: 07/02/20
+Due Date: 07/05/20
+Daily Rental Charge: $2.99
+Charge Days: 1
+Pre Discount Charge: $2.99
+Discount Percent: 50%
+Discount Amount: $1.50
+Final Charge: $1.50
+
+]]></system-out>
+  </testcase>
+  <testcase name="testJuly4OnFridayWithWeekendChargeNoHolidayCharge" classname="CheckoutProcessTest" time="0.003">
+    <system-out><![CDATA[Tool code: LADW
+Tool type: Ladder
+Brand: Werner
+Rental Days: 6
+Checkout Date: 07/03/14
+Due Date: 07/08/14
+Daily Rental Charge: $1.99
+Charge Days: 5
+Pre Discount Charge: $9.95
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $9.95
+
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeDiscount" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="testJuly4OnFridayWithoutHolidayChargeOrWeekendCharge" classname="CheckoutProcessTest" time="0.004">
+    <system-out><![CDATA[Tool code: JAKD
+Tool type: Jackhammer
+Brand: DeWalt
+Rental Days: 6
+Checkout Date: 07/03/14
+Due Date: 07/08/14
+Daily Rental Charge: $2.99
+Charge Days: 3
+Pre Discount Charge: $8.97
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $8.97
+
+]]></system-out>
+  </testcase>
+  <testcase name="testToolNotFound" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="testNegativeRentalDays" classname="CheckoutProcessTest" time="0.0"/>
+  <testcase name="testSkippingLaborDay0DiscountJackhammer" classname="CheckoutProcessTest" time="0.004">
+    <system-out><![CDATA[Tool code: JAKD
+Tool type: Jackhammer
+Brand: DeWalt
+Rental Days: 3
+Checkout Date: 09/02/14
+Due Date: 09/04/14
+Daily Rental Charge: $2.99
+Charge Days: 3
+Pre Discount Charge: $8.97
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $8.97
+
+]]></system-out>
+  </testcase>
+  <testcase name="testFeburaryBoundaryNoDiscountLadderWeekendCharge" classname="CheckoutProcessTest" time="0.007">
+    <system-out><![CDATA[Tool code: LADW
+Tool type: Ladder
+Brand: Werner
+Rental Days: 5
+Checkout Date: 02/26/14
+Due Date: 03/02/14
+Daily Rental Charge: $1.99
+Charge Days: 5
+Pre Discount Charge: $9.95
+Discount Percent: 0%
+Discount Amount: $0.00
+Final Charge: $9.95
+
+]]></system-out>
+  </testcase>
 </testsuite>

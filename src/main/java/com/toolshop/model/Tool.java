@@ -7,10 +7,10 @@ public class Tool {
     //  daily rental charge applies.
     //Brand - The brand of the ladder, chain saw or jackhammer.
     String code;
-    String type;
+    ToolType type;
     String brand;
 
-    public Tool(String code, String type, String brand){
+    public Tool(String code, ToolType type, String brand){
         this.code = code;
         this.type = type;
         this.brand = brand;
@@ -24,11 +24,11 @@ public class Tool {
         this.code = code;
     }
 
-    public String getType() {
+    public ToolType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(ToolType type) {
         this.type = type;
     }
 

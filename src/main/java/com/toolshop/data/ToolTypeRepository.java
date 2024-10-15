@@ -18,11 +18,11 @@ public class ToolTypeRepository {
         toolTypes.add(new ToolType("Jackhammer",2.99, true, false, false));
     }
 
-    public List<ToolType> gettoolTypes() {
+    public List<ToolType> getToolTypes() {
         return toolTypes;
     }
 
-    public ToolType getItemList(String toolType){
+    public ToolType getToolType(String toolType){
         return toolTypes.stream().filter(t -> t.getToolType().equals(toolType)).findFirst().orElse(null);
     }
 }

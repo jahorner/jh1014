@@ -115,7 +115,7 @@ public class RentalAgreement {
         return finalCharge;
     }
 
-    public String getPrintableRentalAgreement(){
+    public void printRentalAgreementToConsole(){
         StringBuilder builder = new StringBuilder();
         builder.append("Tool code: ").append(this.getToolCode()).append("\r\n");
         builder.append("Tool type: ").append(this.getToolType()).append("\r\n");
@@ -129,19 +129,7 @@ public class RentalAgreement {
         builder.append("Discount Percent: ").append(this.getDiscountPercent()).append("%").append("\r\n");
         builder.append("Discount Amount: ").append(usdFormatter.format(this.getDiscountAmount())).append("\r\n");
         builder.append("Final Charge: ").append(usdFormatter.format(this.getFinalCharge())).append("\r\n");
-
-
-        // this.brand = ;
-        //     this.rentalDays = ;
-        //     this.checkoutDate = ;
-        //     this.dueDate = ;
-        //     this.dailyRentalCharge = ;
-        //     this.chargeDays = ;
-        //     this.preDiscountCharge = ;
-        //     this.discountPercent = ;
-        //     this.discountAmount = ;
-        //     this.finalCharge = ;
-        return builder.toString();
+        System.out.println(builder.toString());
     }
 
 }
