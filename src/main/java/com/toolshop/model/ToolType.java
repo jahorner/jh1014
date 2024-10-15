@@ -1,20 +1,6 @@
 package com.toolshop.model;
 
-public class ItemListing {
-//     Daily
-// charge
-
-// Weekday
-// charge
-
-// Weekend
-// charge
-
-// Holiday
-// charge
-// Ladder $1.99 Yes Yes No
-// Chainsaw $1.49 Yes No Yes
-// Jackhammer $2.99 Yes No No
+public class ToolType {
 
     final String toolType;
     final double price;
@@ -22,7 +8,7 @@ public class ItemListing {
     final boolean weekendCharge;
     final boolean holidayCharge;
 
-    public ItemListing(String toolType, double price, boolean weekdayCharge, boolean weekendCharge, boolean holidayCharge){
+    public ToolType(String toolType, double price, boolean weekdayCharge, boolean weekendCharge, boolean holidayCharge){
         this.toolType = toolType;
         this.price = price;
         this.weekdayCharge = weekdayCharge;

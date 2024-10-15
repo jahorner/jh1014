@@ -19,4 +19,8 @@ public class ToolRepository {
     public List<Tool> getTools() {
         return tools;
     }
+
+    public Tool getTool(String toolCode){
+        return tools.stream().filter(t -> t.getCode().equals(toolCode)).findFirst().orElse(null);
+    }
 }
