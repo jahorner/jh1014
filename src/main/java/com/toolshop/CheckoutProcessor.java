@@ -41,7 +41,7 @@ public class CheckoutProcessor {
         LocalDate dueDate = checkoutDate.plus(rentalDayCount, ChronoUnit.DAYS);
 
         return new RentalAgreement(tool.getCode(), tool.getType().getToolType(), tool.getBrand(), rentalDayCount, checkoutDate, dueDate, 
-            toolType.getPrice(), chargeDays, round(total), discoutPercentage, round(discount),round(toCharge));
+            toolType.getPrice(), chargeDays, round(total), discoutPercentage, round(discount), round(toCharge));
     }
 
     private int findNonChargeDayCount(LocalDate checkoutDate, int rentalDayCount,ToolType toolType){
