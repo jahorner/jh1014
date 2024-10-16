@@ -25,29 +25,28 @@ public class CheckoutProcessor {
         }
         Tool tool = toolRepository.getTool(toolCode);
         if(tool == null){
-            throw new Exception("Could not find tool");
+            throw new Exception("Could not find tool, please input a valid toolCode");
         }
         ToolType toolType = tool.getType();
         if(toolType == null){
-            throw new Exception("Could not find tool type");
+            throw new Exception("Could not find tool type, please input a valid toolCode");
         }
 
         int chargeDays = rentalDayCount - findNonChargeDayCount(checkoutDate, rentalDayCount, toolType);
 
         double total = toolType.getPrice() * chargeDays;
-        //TODO check floating point math, possibly change from using decimal dollars to integer cents;
-        double discount = total * (discoutPercentage/100.0);
+        double discount = round(total * (discoutPercentage/100.0));
         double toCharge = total - discount;
 
-        LocalDate dueDate = checkoutDate.plus(rentalDayCount-1, ChronoUnit.DAYS);
+        LocalDate dueDate = checkoutDate.plus(rentalDayCount, ChronoUnit.DAYS);
 
         return new RentalAgreement(tool.getCode(), tool.getType().getToolType(), tool.getBrand(), rentalDayCount, checkoutDate, dueDate, 
-            toolType.getPrice(), chargeDays, total, discoutPercentage, discount, toCharge);
+            toolType.getPrice(), chargeDays, round(total), discoutPercentage, round(discount),round(toCharge));
     }
 
     private int findNonChargeDayCount(LocalDate checkoutDate, int rentalDayCount,ToolType toolType){
         int nonChargeDays = 0;
-        for(int i = 0; i < rentalDayCount; i++){
+        for(int i = 1; i < rentalDayCount; i++){
             LocalDate testDate = checkoutDate.plus(i, ChronoUnit.DAYS);
             DayOfWeek dow = testDate.getDayOfWeek();
             boolean isWeekend = false;
@@ -78,5 +77,9 @@ public class CheckoutProcessor {
             }
         }
         return nonChargeDays;
+    }
+
+    private double round(double number){
+       return Math.round(number * 100.0) / 100.0;
     }
 }

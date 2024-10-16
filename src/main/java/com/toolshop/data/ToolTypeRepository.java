@@ -10,8 +10,8 @@ public class ToolTypeRepository {
     private final List<ToolType> toolTypes = new ArrayList<>();
 
     // Ladder $1.99 Yes Yes No
-// Chainsaw $1.49 Yes No Yes
-// Jackhammer $2.99 Yes No No
+    // Chainsaw $1.49 Yes No Yes
+    // Jackhammer $2.99 Yes No No
     public ToolTypeRepository(){
         toolTypes.add(new ToolType("Ladder",1.99,true, true, false));
         toolTypes.add(new ToolType("Chainsaw",1.49, true, false, true));
